@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+/*sets margin at top of page to 0 */
+*{
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: grey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*Dropdown menu and title div */
+.app_header { 
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  /*border: 1px solid black;*/
 }
 
-.App-link {
-  color: #61dafb;
+.app_stats {
+  display: flex;
+  margin-left: 10px;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.title, .infoBox_cases {
+  color: #66FCF1;
+}
+
+.author {
+  text-indent: 57%;  
+}
+
+.infoBox {
+  padding: 0px;
+}
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+@media (max-width: 700px){
+  .app{
+    flex-direction: column;
   }
 }
+
+.app_left {
+  flex: .9;
+}
+
+.graph {
+  padding: 50px;
+}
+
+.app_dropdown{
+  color: #66FCF1
+}
+
+.table_title, .graph_title{
+  color: #66FCF1
+}
+
+.table{
+  margin-bottom: 15px;
+}
+
+
+
